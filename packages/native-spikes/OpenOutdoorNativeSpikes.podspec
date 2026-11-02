@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
   s.description    = package['description'] || s.summary
   s.license        = 'Apache-2.0'
   s.author         = 'Open Outdoor contributors'
-  s.homepage       = 'https://github.com/Bored-Anarchist/open-outdoor'
+  s.homepage       = 'https://github.com/BoredZigZag/open-outdoor'
   s.platforms      = { :ios => '16.4' }
-  s.source         = { :git => 'https://github.com/Bored-Anarchist/open-outdoor.git', :tag => s.version.to_s }
+  s.source         = { :git => 'https://github.com/BoredZigZag/open-outdoor.git', :tag => s.version.to_s }
   s.static_framework = true
   s.swift_version  = '5.9'
   s.source_files   = 'ios/**/*.{h,m,mm,swift}'

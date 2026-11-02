@@ -17,7 +17,7 @@ async function fixture(run) {
     sequence: 1,
     keyId: 'test',
     provenance: {
-      repository: 'https://github.com/Bored-Anarchist/open-outdoor',
+      repository: 'https://github.com/BoredZigZag/open-outdoor',
       commit: 'a'.repeat(40),
       builder: 'synthetic-test',
       materials: ['pnpm-lock.yaml', 'uv.lock', 'release.json'].map((name) => ({

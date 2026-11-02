@@ -172,7 +172,7 @@ test('CLI verifies a signed synthetic audit and fails after tampering', async ()
     };
     for (const [name, value] of Object.entries(values)) await writeFile(join(bundle, name), value);
     const provenance = {
-      repository: 'https://github.com/Bored-Anarchist/open-outdoor',
+      repository: 'https://github.com/BoredZigZag/open-outdoor',
       commit,
       builder: 'synthetic',
       materials: ['pnpm-lock.yaml', 'uv.lock', 'release.json'].map((name) => ({
