@@ -22,7 +22,7 @@ A descriptor outside the staging directory has this shape (replace every illustr
   "sequence": 1,
   "keyId": "public-release-1",
   "provenance": {
-    "repository": "https://github.com/Bored-Anarchist/open-outdoor",
+    "repository": "https://github.com/BoredZigZag/open-outdoor",
     "commit": "40-character-protected-commit-sha",
     "builder": "immutable-workflow-revision-and-run-url",
     "materials": [

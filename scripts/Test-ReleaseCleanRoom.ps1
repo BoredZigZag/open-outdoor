@@ -19,7 +19,7 @@ function Invoke-Checked {
 try {
     if ((& node --version).Trim() -ne 'v26.12.1' -or (& pnpm --version).Trim() -ne '12.15.0') { throw 'Pinned Node/pnpm required.' }
     # Fetch public hosting only: no local clone or working files are copied. Run on a separately provisioned public-only host.
-    Invoke-Checked 'clone' { & git -c http.sslBackend=schannel clone --no-checkout https://github.com/Bored-Anarchist/open-outdoor.git $checkout }
+    Invoke-Checked 'clone' { & git -c http.sslBackend=schannel clone --no-checkout https://github.com/BoredZigZag/open-outdoor.git $checkout }
     Push-Location $checkout
     try {
         Invoke-Checked 'checkout' { & git checkout --detach $Commit }
